@@ -17,7 +17,7 @@ class CreateQuestsTable extends Migration
             $table->id();
             $table->string('title')->unique();
             $table->longText('description')->nullable();
-            $table->string('logo')->nullable();
+            $table->string('logo_image')->nullable();
             $table->string('lead_time');
             $table->integer('questions_count');
             $table->integer('min_players_count');
@@ -25,6 +25,10 @@ class CreateQuestsTable extends Migration
             $table->string('difficulty_level');
             $table->integer('user_id');
             $table->string('slug')->unique();
+            $table->integer('category_id');
+            $table->integer('attempts')->default('0');
+            $table->string('location');
+            $table->string('rating')->nullable();
             $table->timestamps();
         });
     }
