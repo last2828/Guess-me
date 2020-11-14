@@ -8,19 +8,19 @@
         <div class="input-group">
           <span class="input-group-addon nk-ic-st-pro"><i class="notika-icon notika-support"></i></span>
           <div class="nk-int-st">
-            <input type="text" class="form-control" placeholder="Email" name="email" id="email">
+            <input type="text" class="form-control" placeholder="Email" name="email">
           </div>
         </div>
         <div class="input-group mg-t-15">
           <span class="input-group-addon nk-ic-st-pro"><i class="notika-icon notika-edit"></i></span>
           <div class="nk-int-st">
-            <input type="password" class="form-control" placeholder="Password" name="password" id="password">
+            <input type="password" class="form-control" placeholder="Password" name="password">
           </div>
         </div>
         <div class="fm-checkbox">
           <label><input type="checkbox" class="i-checks"> <i></i> Keep me signed in</label>
         </div>
-        <button type="submit" class="btn btn-login btn-success btn-float"><i class="notika-icon notika-right-arrow right-arrow-ant"></i></button>
+        <button type="submit" class="btn btn-login btn-success btn-float"><i class="notika-icon notika-success"></i></button>
       </div>
       </form>
 

@@ -13,7 +13,7 @@
           <input type="text" class="form-control" placeholder="Email Address" name="email" >
         </div>
       </div>
-      <button type="submit" data-ma-block="#l-login" class="btn btn-login btn-success btn-float"><i class="notika-icon notika-right-arrow"></i></button>
+      <button type="submit" data-ma-block="#l-login" class="btn btn-login btn-success btn-float"><i class="notika-icon notika-success"></i></button>
     </div>
     </form>
     <div class="nk-navigation nk-lg-ic rg-ic-stl">
