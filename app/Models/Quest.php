@@ -2,32 +2,48 @@
 
 namespace App\Models;
 
+use Cviebrock\EloquentSluggable\Sluggable;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use willvincent\Rateable\Rateable;
 
 class Quest extends Model
 {
-    use HasFactory;
+  use HasFactory;
+  use Sluggable;
 
-    protected $fillable = [
-      'title',
-      'description',
-      'category_id',
-      'rating',
-      'attempts',
-      'address',
-      'address_latitude',
-      'address_longitude',
-      'logo_image',
-      'lead_time',
-      'questions_count',
-      'min_players_count',
-      'max_players_count',
-      'difficulty_level_id',
-      'user_id',
-      'slug',
+  protected $fillable = [
+    'title',
+    'description',
+    'category_id',
+    'rating',
+    'attempts',
+    'address',
+    'address_latitude',
+    'address_longitude',
+    'logo_image',
+    'lead_time',
+    'questions_count',
+    'min_players_count',
+    'max_players_count',
+    'difficulty_level_id',
+    'user_id',
+    'slug',
+  ];
+
+  /**
+   * Return the sluggable configuration array for this model.
+   *
+   * @return array
+   */
+  public function sluggable()
+  {
+    return [
+      'slug' => [
+        'source' => 'title'
+      ]
     ];
+  }
 
   public function tasks()
   {
@@ -36,7 +52,7 @@ class Quest extends Model
 
   public function user()
   {
-    return $this->belongsTo(User::class, 'user_id', 'id');
+    return $this->hasOne(User::class);
   }
 
   public function category()

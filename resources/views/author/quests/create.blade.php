@@ -47,7 +47,7 @@
                       <h4>Enter title</h4>
                     </div>
                     <div class="nk-int-st">
-                      <input type="text" class="form-control input-sm" placeholder="title*">
+                      <input type="text" class="form-control input-sm" placeholder="title*" name="title">
                     </div>
                   </div>
                 </div>
