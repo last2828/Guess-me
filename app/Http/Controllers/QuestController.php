@@ -34,7 +34,15 @@ class QuestController extends Controller
      */
     public function store(Request $request)
     {
+<<<<<<< Updated upstream
         //
+=======
+      $data = $request->all();
+      $data['user_id'] = Auth::id();
+      Quest::create($data);
+
+      return redirect()->route('quests.index');
+>>>>>>> Stashed changes
     }
 
     /**

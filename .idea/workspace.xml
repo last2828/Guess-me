@@ -60,59 +60,120 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="html" value="1" />
+<<<<<<< Updated upstream
           <entry key="php" value="3561" />
+=======
+          <entry key="js" value="9" />
+          <entry key="php" value="6760" />
+>>>>>>> Stashed changes
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
+<<<<<<< Updated upstream
           <entry key="Blade" value="1675" />
           <entry key="HTML" value="1" />
           <entry key="PHP" value="1434" />
           <entry key="PLAIN_TEXT" value="452" />
+=======
+          <entry key="Blade" value="3896" />
+          <entry key="HTML" value="1" />
+          <entry key="JavaScript" value="9" />
+          <entry key="PHP" value="2402" />
+          <entry key="PLAIN_TEXT" value="466" />
+>>>>>>> Stashed changes
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="css" value="3" />
+<<<<<<< Updated upstream
           <entry key="html" value="9" />
           <entry key="php" value="74" />
+=======
+          <entry key="env" value="2" />
+          <entry key="html" value="19" />
+          <entry key="js" value="4" />
+          <entry key="php" value="126" />
+          <entry key="rnc" value="1" />
+>>>>>>> Stashed changes
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
+<<<<<<< Updated upstream
           <entry key="Blade" value="39" />
           <entry key="CSS" value="3" />
           <entry key="HTML" value="9" />
           <entry key="PHP" value="26" />
           <entry key="PLAIN_TEXT" value="9" />
+=======
+          <entry key="Blade" value="50" />
+          <entry key="CSS" value="3" />
+          <entry key="HTML" value="19" />
+          <entry key="JavaScript" value="4" />
+          <entry key="PHP" value="66" />
+          <entry key="PLAIN_TEXT" value="12" />
+          <entry key="RNG Compact" value="1" />
+>>>>>>> Stashed changes
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/author/quests/index.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="242">
+              <caret line="34" column="39" selection-start-line="34" selection-start-column="39" selection-end-line="34" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/author/quests/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
             <state relative-caret-position="483">
               <caret line="516" column="70" selection-start-line="516" selection-start-column="70" selection-end-line="516" selection-end-column="70" />
               <folding>
                 <element signature="n#div#0;n#!!top" />
+=======
+            <state relative-caret-position="376">
+              <caret line="49" column="103" selection-start-line="49" selection-start-column="103" selection-end-line="49" selection-end-column="103" />
+              <folding>
+                <element signature="e#6395#6416#0#HTML" expanded="true" />
+                <element signature="e#6409#6442#0#HTML" expanded="true" />
+                <element signature="e#6469#6502#0#HTML" expanded="true" />
+>>>>>>> Stashed changes
               </folding>
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< Updated upstream
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/author/layout.blade.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="342">
               <caret line="126" column="44" selection-start-line="126" selection-start-column="44" selection-end-line="126" selection-end-column="44" />
+=======
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/QuestController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="370">
+              <caret line="45" column="36" selection-start-line="45" selection-start-column="36" selection-end-line="45" selection-end-column="36" />
+              <folding>
+                <element signature="e#40#64#0#PHP" expanded="true" />
+              </folding>
+>>>>>>> Stashed changes
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< Updated upstream
         <entry file="file://$PROJECT_DIR$/resources/views/profile/show.blade.php">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
@@ -129,6 +190,12 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="326">
               <caret line="42" column="11" selection-start-line="42" selection-start-column="11" selection-end-line="42" selection-end-column="11" />
+=======
+        <entry file="file://$PROJECT_DIR$/database/seeders/QuestSeeder.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="291">
+              <caret line="54" column="30" selection-start-line="54" selection-start-column="30" selection-end-line="54" selection-end-column="30" />
+>>>>>>> Stashed changes
             </state>
           </provider>
         </entry>
@@ -136,8 +203,34 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/QuestController.php">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
             <state relative-caret-position="199">
               <caret line="15" column="40" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
+=======
+            <state relative-caret-position="256">
+              <caret line="645" column="44" selection-start-line="645" selection-start-column="44" selection-end-line="645" selection-end-column="86" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Models/Quest.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="27" column="26" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
+              <folding>
+                <element signature="e#30#72#0#PHP" expanded="true" />
+              </folding>
+>>>>>>> Stashed changes
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/migrations/2020_11_06_135639_create_quests_table.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="237">
+              <caret line="27" column="42" selection-start-line="27" selection-start-column="42" selection-end-line="27" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -146,6 +239,7 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
+<<<<<<< Updated upstream
       <find>css/main.css</find>
       <find>style.css</find>
       <find>css/responsive.css</find>
@@ -156,6 +250,8 @@
       <find>js/jquery-price-slider.js</find>
       <find>js/owl.carousel.min.js</find>
       <find>js/jquery.scrollUp.min.js</find>
+=======
+>>>>>>> Stashed changes
       <find>js/meanmenu/jquery.meanmenu.js</find>
       <find>js/counterup/jquery.counterup.min.js</find>
       <find>js/counterup/waypoints.min.js</find>
@@ -176,6 +272,19 @@
       <find>js/data-table/jquery.dataTables.min.js</find>
       <find>js/data-table/data-table-act.js</find>
       <find>js/main.js</find>
+<<<<<<< Updated upstream
+=======
+      <find>logo.png</find>
+      <find>logo</find>
+      <find>input larg</find>
+      <find>textare</find>
+      <find>col-lg-3</find>
+      <find>Basic Example</find>
+      <find>Bootstrap Seelct - Custom Select</find>
+      <find>Image Cropper</find>
+      <find>inputImage</find>
+      <find>Preview image</find>
+>>>>>>> Stashed changes
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -214,6 +323,22 @@
         <option value="$PROJECT_DIR$/resources/views/author/quests/index.blade.php" />
         <option value="$PROJECT_DIR$/app/Providers/JetstreamServiceProvider.php" />
         <option value="$PROJECT_DIR$/resources/views/author/layout.blade.php" />
+<<<<<<< Updated upstream
+=======
+        <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/public/js/mapInput.js" />
+        <option value="$PROJECT_DIR$/.env" />
+        <option value="$PROJECT_DIR$/database/migrations/2020_11_16_111801_create_categories_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2020_11_22_192407_create_quest_levels_table.php" />
+        <option value="$PROJECT_DIR$/database/seeders/QuestLevelSeeder.php" />
+        <option value="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" />
+        <option value="$PROJECT_DIR$/app/Models/QuestLevel.php" />
+        <option value="$PROJECT_DIR$/app/Models/Quest.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2020_11_06_135639_create_quests_table.php" />
+        <option value="$PROJECT_DIR$/database/seeders/QuestSeeder.php" />
+        <option value="$PROJECT_DIR$/resources/views/author/quests/create.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/QuestController.php" />
+>>>>>>> Stashed changes
       </list>
     </option>
   </component>
@@ -349,6 +474,8 @@
       <path value="$PROJECT_DIR$/vendor/monolog/monolog" />
       <path value="$PROJECT_DIR$/vendor/facade/ignition" />
       <path value="$PROJECT_DIR$/vendor/phpspec/prophecy" />
+      <path value="$PROJECT_DIR$/vendor/cocur/slugify" />
+      <path value="$PROJECT_DIR$/vendor/cviebrock/eloquent-sluggable" />
     </include_path>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
@@ -386,6 +513,32 @@
             <path>
               <item name="guess-me" type="b2602c69:ProjectViewProjectNode" />
               <item name="guess-me" type="462c0819:PsiDirectoryNode" />
+<<<<<<< Updated upstream
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="author" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+>>>>>>> Stashed changes
+            </path>
+            <path>
+              <item name="guess-me" type="b2602c69:ProjectViewProjectNode" />
+              <item name="guess-me" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+<<<<<<< Updated upstream
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="profile" type="462c0819:PsiDirectoryNode" />
+=======
+            </path>
+            <path>
+              <item name="guess-me" type="b2602c69:ProjectViewProjectNode" />
+              <item name="guess-me" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="guess-me" type="b2602c69:ProjectViewProjectNode" />
+              <item name="guess-me" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="author" type="462c0819:PsiDirectoryNode" />
@@ -395,7 +548,9 @@
               <item name="guess-me" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="profile" type="462c0819:PsiDirectoryNode" />
+              <item name="author" type="462c0819:PsiDirectoryNode" />
+              <item name="quests" type="462c0819:PsiDirectoryNode" />
+>>>>>>> Stashed changes
             </path>
           </expand>
           <select />
@@ -447,18 +602,31 @@
       <workItem from="1605432306066" duration="27000" />
       <workItem from="1605432387408" duration="271000" />
       <workItem from="1605432747537" duration="3867000" />
+<<<<<<< Updated upstream
       <workItem from="1605445775893" duration="7448000" />
+=======
+      <workItem from="1605445775893" duration="7600000" />
+      <workItem from="1605471122634" duration="7929000" />
+      <workItem from="1605810537653" duration="17079000" />
+>>>>>>> Stashed changes
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< Updated upstream
     <option name="totallyTimeSpent" value="32856000" />
+=======
+    <option name="totallyTimeSpent" value="58016000" />
+>>>>>>> Stashed changes
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
+<<<<<<< Updated upstream
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20028612" />
+=======
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3090129" />
+>>>>>>> Stashed changes
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -471,7 +639,11 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
+<<<<<<< Updated upstream
       <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.26044226" />
+=======
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.41769043" />
+>>>>>>> Stashed changes
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -486,6 +658,7 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+<<<<<<< Updated upstream
     <entry file="file://$PROJECT_DIR$/database/migrations/2020_11_06_155534_create_user_roles_table.php" />
     <entry file="file://$PROJECT_DIR$/database/migrations/2020_11_06_162215_create_user_role_table.php" />
     <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php">
@@ -494,6 +667,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/database/seeders/RoleSeeder.php">
+=======
+    <entry file="file://$USER_HOME$/Desktop/style.css" />
+    <entry file="file://$PROJECT_DIR$/resources/views/auth/register.blade.php">
+>>>>>>> Stashed changes
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="368">
           <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
@@ -650,6 +827,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< Updated upstream
     <entry file="file://$PROJECT_DIR$/resources/views/welcome.blade.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -664,12 +842,23 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/dashboard.blade.php">
+=======
+    <entry file="file://$PROJECT_DIR$/public/js/mapInput.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1840">
+          <caret line="80" column="1" selection-start-line="80" selection-start-column="1" selection-end-line="80" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/notika-master/notika/green-horizotal/form-examples.html">
+>>>>>>> Stashed changes
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
           <caret line="13" column="10" lean-forward="true" selection-start-line="13" selection-end-line="14" />
         </state>
       </provider>
     </entry>
+<<<<<<< Updated upstream
     <entry file="file://$USER_HOME$/Desktop/notika-master/notika/green-horizotal/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-251">
@@ -687,6 +876,9 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/TaskController.php">
+=======
+    <entry file="file://$PROJECT_DIR$/database/migrations/2020_11_16_111801_create_categories_table.php">
+>>>>>>> Stashed changes
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-40" />
       </provider>
@@ -698,6 +890,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< Updated upstream
     <entry file="file://$PROJECT_DIR$/resources/views/author/auth/layout.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2852">
@@ -713,6 +906,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/MainController.php">
+=======
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/QuestLevelController.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/seeders/QuestLevelSeeder.php">
+>>>>>>> Stashed changes
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
           <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
@@ -726,6 +925,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< Updated upstream
     <entry file="file://$PROJECT_DIR$/resources/views/author/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="594">
@@ -734,6 +934,9 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/web.php">
+=======
+    <entry file="file://$PROJECT_DIR$/app/Models/QuestLevel.php">
+>>>>>>> Stashed changes
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="348">
           <caret line="28" column="77" selection-start-line="28" selection-start-column="77" selection-end-line="28" selection-end-column="77" />
@@ -750,6 +953,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< Updated upstream
     <entry file="file://$USER_HOME$/Desktop/notika-master/notika/green-horizotal/data-table.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
@@ -762,23 +966,74 @@
             <element signature="n#div#4;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#5;n#body#0;n#html#0;n#!!top" />
           </folding>
+=======
+    <entry file="file://$USER_HOME$/Desktop/notika-master/notika/green-horizotal/form-components.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-15">
+          <caret line="1654" column="31" lean-forward="true" selection-start-line="1654" selection-start-column="31" selection-end-line="1680" selection-end-column="29" />
+          <folding>
+            <element signature="e#96477#97896#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/notika-master/notika/green-horizotal/form-elements.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="626" column="21" selection-start-line="626" selection-start-column="21" selection-end-line="630" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/resources/html5-schema/html5/web-forms.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="506" column="16" selection-start-line="506" selection-start-column="16" selection-end-line="506" selection-end-column="16" />
+>>>>>>> Stashed changes
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/author/quests/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
         <state relative-caret-position="483">
           <caret line="516" column="70" selection-start-line="516" selection-start-column="70" selection-end-line="516" selection-end-column="70" />
           <folding>
             <element signature="n#div#0;n#!!top" />
+=======
+        <state relative-caret-position="256">
+          <caret line="645" column="44" selection-start-line="645" selection-start-column="44" selection-end-line="645" selection-end-column="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/Quest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="27" column="26" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
+          <folding>
+            <element signature="e#30#72#0#PHP" expanded="true" />
+>>>>>>> Stashed changes
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< Updated upstream
     <entry file="file://$PROJECT_DIR$/app/Providers/JetstreamServiceProvider.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="326">
           <caret line="42" column="11" selection-start-line="42" selection-start-column="11" selection-end-line="42" selection-end-column="11" />
+=======
+    <entry file="file://$PROJECT_DIR$/database/migrations/2020_11_06_135639_create_quests_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="27" column="42" selection-start-line="27" selection-start-column="42" selection-end-line="27" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/seeders/QuestSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="54" column="30" selection-start-line="54" selection-start-column="30" selection-end-line="54" selection-end-column="30" />
+>>>>>>> Stashed changes
         </state>
       </provider>
     </entry>
@@ -787,6 +1042,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/navigation-dropdown.blade.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
         <state relative-caret-position="-770" />
       </provider>
     </entry>
@@ -794,6 +1050,39 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
           <caret line="126" column="44" selection-start-line="126" selection-start-column="44" selection-end-line="126" selection-end-column="44" />
+=======
+        <state relative-caret-position="376">
+          <caret line="49" column="103" selection-start-line="49" selection-start-column="103" selection-end-line="49" selection-end-column="103" />
+          <folding>
+            <element signature="e#6395#6416#0#HTML" expanded="true" />
+            <element signature="e#6409#6442#0#HTML" expanded="true" />
+            <element signature="e#6469#6502#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/author/layout.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1356">
+          <caret line="41" column="22" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/QuestController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="370">
+          <caret line="45" column="36" selection-start-line="45" selection-start-column="36" selection-end-line="45" selection-end-column="36" />
+          <folding>
+            <element signature="e#40#64#0#PHP" expanded="true" />
+          </folding>
+>>>>>>> Stashed changes
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/author/quests/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="34" column="39" selection-start-line="34" selection-start-column="39" selection-end-line="34" selection-end-column="39" />
         </state>
       </provider>
     </entry>

@@ -22,7 +22,11 @@ class CreateQuestsTable extends Migration
             $table->integer('questions_count');
             $table->integer('min_players_count');
             $table->integer('max_players_count');
+<<<<<<< Updated upstream
             $table->string('difficulty_level');
+=======
+            $table->string('difficulty_level_id');
+>>>>>>> Stashed changes
             $table->integer('user_id');
             $table->string('slug')->unique();
             $table->integer('category_id');
