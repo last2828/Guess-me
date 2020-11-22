@@ -21,12 +21,12 @@ Route::get('/', function () {
 });
 
 //Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
-//    return view('author.index');
+//    return view('dashboard');
 //})->name('dashboard');
 
 Route::group(['prefix' => 'author', 'middleware' => 'auth'], function(){
 
-  Route::get('/dashboard', [MainController::class, 'index'])->name('dashboard');
+  Route::get('/dashboard', [ MainController::class, 'index' ])->name('dashboard');
 
 
   Route::resources([

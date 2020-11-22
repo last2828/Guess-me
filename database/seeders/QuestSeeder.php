@@ -24,14 +24,9 @@ class QuestSeeder extends Seeder
           'questions_count' => '10',
           'min_players_count' => '4',
           'max_players_count' => '8',
-<<<<<<< Updated upstream
-          'difficulty_level' => 'Easy',
-=======
-          'difficulty_level_id' => '1',
->>>>>>> Stashed changes
+          'difficulty_level' => '1',
           'user_id' => '1',
           'slug' => 'my-first-quest',
-          'location' => 'Gaisyn',
           'category_id' => '1',
         ]);
 
@@ -43,14 +38,9 @@ class QuestSeeder extends Seeder
           'questions_count' => '6',
           'min_players_count' => '3',
           'max_players_count' => '6',
-<<<<<<< Updated upstream
-          'difficulty_level' => 'Medium',
-=======
-          'difficulty_level_id' => '2',
->>>>>>> Stashed changes
+          'difficulty_level' => '2',
           'user_id' => '2',
           'slug' => 'testing-quest',
-          'location' => 'Gaisyn',
           'category_id' => '2',
         ]);
 
@@ -62,14 +52,9 @@ class QuestSeeder extends Seeder
           'questions_count' => '8',
           'min_players_count' => '2',
           'max_players_count' => '4',
-<<<<<<< Updated upstream
-          'difficulty_level' => 'High',
-=======
-          'difficulty_level_id' => '3',
->>>>>>> Stashed changes
+          'difficulty_level' => '3',
           'user_id' => '3',
           'slug' => 'apartment-quest',
-          'location' => 'Gaisyn',
           'category_id' => '3',
         ]);
     }
