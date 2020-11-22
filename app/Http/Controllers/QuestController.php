@@ -2,11 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Category;
-use App\Models\Quest;
-use App\Models\QuestLevel;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
 
 class QuestController extends Controller
 {
@@ -17,9 +13,7 @@ class QuestController extends Controller
      */
     public function index()
     {
-      $quests = Quest::all();
-
-      return view('author.quests.index', compact('quests'));
+        return view('author.quests.index');
     }
 
     /**
@@ -29,9 +23,7 @@ class QuestController extends Controller
      */
     public function create()
     {
-      $categories = Category::all();
-      $levels = QuestLevel::all();
-      return view('author.quests.create', compact(['categories', 'levels']));
+        //
     }
 
     /**
@@ -42,14 +34,15 @@ class QuestController extends Controller
      */
     public function store(Request $request)
     {
-
-      dd($request->all());
+<<<<<<< Updated upstream
+        //
+=======
       $data = $request->all();
       $data['user_id'] = Auth::id();
-      $data['slug'] = 'test';
       Quest::create($data);
 
       return redirect()->route('quests.index');
+>>>>>>> Stashed changes
     }
 
     /**
