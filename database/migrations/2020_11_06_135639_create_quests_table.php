@@ -22,10 +22,10 @@ class CreateQuestsTable extends Migration
             $table->integer('questions_count')->default('0');
             $table->integer('min_players_count');
             $table->integer('max_players_count');
-            $table->string('difficulty_level_id')->unsigned();
-            $table->integer('user_id')->unsigned();
+            $table->string('difficulty_level_id');
+            $table->integer('user_id');
             $table->string('slug')->unique();
-            $table->integer('category_id')->unsigned();
+            $table->integer('category_id');
             $table->integer('attempts')->default('0');
             $table->string('address')->nullable();
             $table->double('address_latitude')->nullable();

@@ -64,15 +64,15 @@
           <entry key="env" value="4" />
           <entry key="html" value="1" />
           <entry key="js" value="9" />
-          <entry key="php" value="6478" />
+          <entry key="php" value="6486" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Blade" value="3671" />
+          <entry key="Blade" value="3676" />
           <entry key="HTML" value="1" />
           <entry key="JavaScript" value="9" />
-          <entry key="PHP" value="2345" />
+          <entry key="PHP" value="2348" />
           <entry key="PLAIN_TEXT" value="466" />
         </counts>
       </usages-collector>
@@ -82,7 +82,7 @@
           <entry key="env" value="2" />
           <entry key="html" value="16" />
           <entry key="js" value="4" />
-          <entry key="php" value="122" />
+          <entry key="php" value="123" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -91,7 +91,7 @@
           <entry key="CSS" value="3" />
           <entry key="HTML" value="16" />
           <entry key="JavaScript" value="4" />
-          <entry key="PHP" value="63" />
+          <entry key="PHP" value="64" />
           <entry key="PLAIN_TEXT" value="12" />
         </counts>
       </usages-collector>
@@ -102,45 +102,33 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/author/quests/create.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="366">
-              <caret line="186" column="46" selection-start-line="186" selection-start-column="46" selection-end-line="186" selection-end-column="46" />
+            <state relative-caret-position="529">
+              <caret line="162" column="22" selection-start-line="162" selection-start-column="22" selection-end-line="162" selection-end-column="22" />
               <folding>
-                <element signature="e#5859#9060#0#HTML" />
-                <element signature="e#6409#6442#0#HTML" expanded="true" />
-                <element signature="e#6469#6502#0#HTML" expanded="true" />
+                <element signature="e#6183#6204#0#HTML" expanded="true" />
+                <element signature="e#9715#9748#0#HTML" expanded="true" />
+                <element signature="e#9775#9808#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/QuestController.php">
+        <entry file="file://$PROJECT_DIR$/database/seeders/QuestSeeder.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="227">
-              <caret line="45" column="26" selection-start-line="45" selection-start-column="26" selection-end-line="45" selection-end-column="26" />
-              <folding>
-                <element signature="e#40#64#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="475">
+              <caret line="54" column="30" selection-start-line="54" selection-start-column="30" selection-end-line="54" selection-end-column="30" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/author/layout.blade.php">
+        <entry file="file://$PROJECT_DIR$/app/Models/Quest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1">
-              <caret line="41" column="22" lean-forward="true" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Desktop/notika-master/notika/green-horizotal/image-cropper.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="623" column="4" selection-start-line="623" selection-start-column="4" selection-end-line="674" selection-end-column="34" />
+            <state relative-caret-position="331">
+              <caret line="26" column="25" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
               <folding>
-                <element signature="n#div#4;n#body#0;n#html#0;n#!!top" />
+                <element signature="e#30#84#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -224,13 +212,13 @@
         <option value="$PROJECT_DIR$/database/migrations/2020_11_16_111801_create_categories_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2020_11_22_192407_create_quest_levels_table.php" />
         <option value="$PROJECT_DIR$/database/seeders/QuestLevelSeeder.php" />
-        <option value="$PROJECT_DIR$/database/seeders/QuestSeeder.php" />
         <option value="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" />
         <option value="$PROJECT_DIR$/app/Models/QuestLevel.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2020_11_06_135639_create_quests_table.php" />
         <option value="$PROJECT_DIR$/app/Models/Quest.php" />
-        <option value="$PROJECT_DIR$/resources/views/author/quests/create.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/QuestController.php" />
+        <option value="$PROJECT_DIR$/resources/views/author/quests/create.blade.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2020_11_06_135639_create_quests_table.php" />
+        <option value="$PROJECT_DIR$/database/seeders/QuestSeeder.php" />
       </list>
     </option>
   </component>
@@ -405,13 +393,37 @@
             <path>
               <item name="guess-me" type="b2602c69:ProjectViewProjectNode" />
               <item name="guess-me" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Models" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="guess-me" type="b2602c69:ProjectViewProjectNode" />
               <item name="guess-me" type="462c0819:PsiDirectoryNode" />
               <item name="database" type="462c0819:PsiDirectoryNode" />
+              <item name="migrations" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="guess-me" type="b2602c69:ProjectViewProjectNode" />
+              <item name="guess-me" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+              <item name="seeders" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="guess-me" type="b2602c69:ProjectViewProjectNode" />
+              <item name="guess-me" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="guess-me" type="b2602c69:ProjectViewProjectNode" />
+              <item name="guess-me" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="guess-me" type="b2602c69:ProjectViewProjectNode" />
+              <item name="guess-me" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="author" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -470,7 +482,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53237000" />
+    <option name="totallyTimeSpent" value="53363000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -489,7 +501,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.34275183" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.18427518" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -621,9 +633,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="468">
           <caret line="27" column="23" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
-          <folding>
-            <element signature="e#36#60#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -646,19 +655,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="283">
           <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-          <folding>
-            <element signature="e#36#56#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Desktop/data-table-act.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="5" lean-forward="true" selection-start-line="4" selection-start-column="37" selection-end-line="8" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/Desktop/data-table-act.js" />
     <entry file="file://$PROJECT_DIR$/public/js/data-table/data-table-act.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
@@ -673,9 +673,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/author/dashboard.blade.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/author/dashboard.blade.php" />
     <entry file="file://$PROJECT_DIR$/resources/views/author/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="46">
@@ -714,13 +712,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/author/quests/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="34" column="39" selection-start-line="34" selection-start-column="39" selection-end-line="34" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Desktop/notika-master/notika/green-horizotal/form-examples.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-17108">
@@ -752,20 +743,10 @@
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/QuestLevelController.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/seeders/QuestSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="26" column="34" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/seeders/QuestLevelSeeder.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="401">
           <caret line="27" column="24" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
-          <folding>
-            <element signature="e#36#62#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -773,13 +754,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="359">
           <caret line="19" column="34" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/Quest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="48" column="67" selection-start-line="48" selection-start-column="67" selection-end-line="48" selection-end-column="67" />
         </state>
       </provider>
     </entry>
@@ -797,20 +771,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2020_11_06_135639_create_quests_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="24" column="47" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Desktop/notika-master/notika/green-horizotal/image-cropper.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="623" column="4" selection-start-line="623" selection-start-column="4" selection-end-line="674" selection-end-column="34" />
-          <folding>
-            <element signature="n#div#4;n#body#0;n#html#0;n#!!top" />
-          </folding>
+        <state relative-caret-position="256">
+          <caret line="645" column="44" selection-start-line="645" selection-start-column="44" selection-end-line="645" selection-end-column="86" />
         </state>
       </provider>
     </entry>
@@ -821,18 +785,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/author/quests/create.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="186" column="46" selection-start-line="186" selection-start-column="46" selection-end-line="186" selection-end-column="46" />
-          <folding>
-            <element signature="e#5859#9060#0#HTML" />
-            <element signature="e#6409#6442#0#HTML" expanded="true" />
-            <element signature="e#6469#6502#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/QuestController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="227">
@@ -840,6 +792,49 @@
           <folding>
             <element signature="e#40#64#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/Quest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="26" column="25" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
+          <folding>
+            <element signature="e#30#84#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/author/quests/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="34" column="38" selection-start-line="34" selection-start-column="38" selection-end-line="34" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2020_11_06_135639_create_quests_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="24" column="49" selection-start-line="24" selection-start-column="49" selection-end-line="24" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/author/quests/create.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="529">
+          <caret line="162" column="22" selection-start-line="162" selection-start-column="22" selection-end-line="162" selection-end-column="22" />
+          <folding>
+            <element signature="e#6183#6204#0#HTML" expanded="true" />
+            <element signature="e#9715#9748#0#HTML" expanded="true" />
+            <element signature="e#9775#9808#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/seeders/QuestSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="54" column="30" selection-start-line="54" selection-start-column="30" selection-end-line="54" selection-end-column="30" />
         </state>
       </provider>
     </entry>
