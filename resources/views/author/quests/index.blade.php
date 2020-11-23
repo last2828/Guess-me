@@ -24,9 +24,13 @@
               <table id="data-table-basic" class="table table-striped">
                 <thead>
                 <tr>
-                  <th>Name</th>
-                  <th>Category</th>
-                  <th>Created at</th>
+                  <th>Название</th>
+                  <th>Категория</th>
+                  <th>Уровень</th>
+                  <th>Заданий</th>
+                  <th>Прохождений</th>
+                  <th>Статус</th>
+                  <th>Дата создания</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -34,17 +38,25 @@
                 <tr>
                   <td>{{$quest->title}}</td>
                   <td>{{$quest->category->name}}</td>
+                  <td>{{$quest->level->title}}</td>
+                  <td>{{$quest->questions_count}}</td>
+                  <td>{{$quest->attempts}}</td>
+                  <td>{{($quest->status == false) ? 'Выключен' : 'Включен'}}</td>
                   <td>{{$quest->created_at->format('d.m.Y')}}</td>
-                  <td><a href="{{route('quests.show', $quest->id)}}" target="_blank" class="btn btn-success notika-btn-success waves-effect" role="button">Show</a></td>
-                  <td><a href="{{route('quests.edit', $quest->id)}}" target="_blank" class="btn btn-warning notika-btn-warning waves-effect" role="button">Edit</a></td>
-                  <td><a href="{{route('quests.destroy', $quest->id)}}" target="_blank" class="btn btn-danger notika-btn-danger waves-effect" role="button" onclick="confirm('Are you sure?')">Delete</a></td>
+                  <td><a href="{{route('quests.show', $quest->id)}}" target="_blank" class="btn btn-success notika-btn-success waves-effect" role="button"><i class="notika-icon notika-eye" style="font-size: large"></i></a></td>
+                  <td><a href="{{route('quests.edit', $quest->id)}}" class="btn btn-warning notika-btn-warning waves-effect" role="button"><i class="notika-icon notika-edit" style="font-size: large"></i></a></td>
+                  <td><a href="{{route('quests.destroy', $quest->id)}}" class="btn btn-danger notika-btn-danger waves-effect" role="button" onclick="confirm('Are you sure?')"><i class="notika-icon notika-trash" style="font-size: large"></i></a></td>
                 </tr>
                 @endforeach
                 <tfoot>
                 <tr>
-                  <th>Name</th>
-                  <th>Category</th>
-                  <th>Created at</th>
+                  <th>Название</th>
+                  <th>Категория</th>
+                  <th>Уровень</th>
+                  <th>Заданий</th>
+                  <th>Прохождений</th>
+                  <th>Статус</th>
+                  <th>Дата создания</th>
                 </tr>
                 </tfoot>
               </table>

@@ -78,7 +78,7 @@
         <div class="header-top-menu nav navbar-nav notika-top-nav">
           <form action="{{route('logout')}}" method="POST">
             @csrf
-            <button class="btn btn-danger notika-btn-danger">Sign Out</button>
+            <button class="btn btn-danger notika-btn-danger">Выйти</button>
           </form>
         </div>
       </div>
@@ -96,13 +96,13 @@
             <ul class="mobile-menu-nav">
               {{--<li><a data-toggle="collapse" href="{{route('dashboard')}}">Home</a>--}}
               {{--</li>--}}
-              <li><a data-toggle="collapse" href="{{route('quests.index')}}">Quests</a>
+              <li><a data-toggle="collapse" href="{{route('quests.index')}}">Квесты</a>
               </li>
-              <li><a data-toggle="collapse" href="#">Statistic</a>
+              <li><a data-toggle="collapse" href="#">Статистика</a>
               </li>
-              <li><a data-toggle="collapse" href="#">Account</a>
+              <li><a data-toggle="collapse" href="#">Профиль</a>
               </li>
-              <li><a data-toggle="collapse" href="#">Support</a>
+              <li><a data-toggle="collapse" href="#">Помощь</a>
               </li>
             </ul>
           </nav>
@@ -120,21 +120,21 @@
         <ul class="nav nav-tabs notika-menu-wrap menu-it-icon-pro">
           {{--<li><a href="{{route('dashboard')}}"><i class="notika-icon notika-house"></i> Home</a>--}}
           {{--</li>--}}
-          <li><a data-toggle="tab" href="#Quests"><i class="notika-icon notika-app"></i> Quests</a>
+          <li><a data-toggle="tab" href="#Quests"><i class="notika-icon notika-app"></i> Квесты</a>
           </li>
-          <li><a href="#"><i class="notika-icon notika-mail"></i> Statistic</a>
+          <li><a href="#"><i class="notika-icon notika-mail"></i> Статистика</a>
           </li>
-          <li><a data-toggle="tab" href="{{route('profile.show')}}"><i class="notika-icon notika-support"></i> Account</a>
+          <li><a data-toggle="tab" href="{{route('profile.show')}}"><i class="notika-icon notika-support"></i> Профиль</a>
           </li>
-          <li><a data-toggle="tab" href="#"><i class="notika-icon notika-mail"></i> Support</a>
+          <li><a data-toggle="tab" href="#"><i class="notika-icon notika-mail"></i> Помощь</a>
           </li>
         </ul>
         <div class="tab-content custom-menu-content">
           <div id="Quests" class="tab-pane in notika-tab-menu-bg animated flipInX">
             <ul class="notika-main-menu-dropdown">
-              <li><a href="{{route('quests.index')}}">List</a>
+              <li><a href="{{route('quests.index')}}">Мои квесты</a>
               </li>
-              <li><a href="{{route('quests.create')}}">New Quest</a>
+              <li><a href="{{route('quests.create')}}">Новый квест</a>
               </li>
             </ul>
           </div>

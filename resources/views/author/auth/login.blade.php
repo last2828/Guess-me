@@ -26,6 +26,8 @@
 
       <div class="nk-navigation nk-lg-ic">
         <a href="{{route('register')}}" data-ma-block="#l-register"><i class="notika-icon notika-plus-symbol"></i> <span>Register</span></a>
+        <a href="#" data-ma-block="#l-register"><i class="fa fa-facebook-official"></i> <span>Facebook</span></a>
+        <a href="#" data-ma-block="#l-register"><i class="fa fa-google"></i> <span>Google</span></a>
         <a href="{{route('password.request')}}" data-ma-block="#l-forget-password"><i>?</i> <span>Forgot Password</span></a>
       </div>
     </div>

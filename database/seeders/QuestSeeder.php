@@ -19,7 +19,6 @@ class QuestSeeder extends Seeder
         Quest::create([
           'title' => 'My first quest',
           'description' => 'Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor',
-          'logo_image' => '',
           'lead_time' => '60 minutes',
           'questions_count' => '10',
           'min_players_count' => '4',
@@ -33,7 +32,6 @@ class QuestSeeder extends Seeder
         Quest::create([
           'title' => 'Testing quest',
           'description' => 'Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor',
-          'logo_image' => '',
           'lead_time' => '60 minutes',
           'questions_count' => '6',
           'min_players_count' => '3',
@@ -47,7 +45,6 @@ class QuestSeeder extends Seeder
         Quest::create([
           'title' => 'Apartment quest',
           'description' => 'Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor',
-          'logo_image' => '',
           'lead_time' => '60 minutes',
           'questions_count' => '8',
           'min_players_count' => '2',

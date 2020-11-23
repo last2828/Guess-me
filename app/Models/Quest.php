@@ -21,13 +21,16 @@ class Quest extends Model
     'address',
     'address_latitude',
     'address_longitude',
-    'logo_image',
+    'logo_image_url',
+    'logo_image_basename',
+    'logo_image_original_name',
     'lead_time',
     'questions_count',
     'min_players_count',
     'max_players_count',
     'level_id',
     'user_id',
+    'status',
     'slug',
   ];
 

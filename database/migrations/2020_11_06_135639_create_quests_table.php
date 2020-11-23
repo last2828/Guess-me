@@ -17,7 +17,9 @@ class CreateQuestsTable extends Migration
             $table->id();
             $table->string('title')->unique();
             $table->longText('description')->nullable();
-            $table->string('logo_image')->nullable();
+            $table->string('logo_image_url')->nullable();
+            $table->string('logo_image_basename')->nullable();
+            $table->string('logo_image_original_name')->nullable();
             $table->string('lead_time')->nullable();
             $table->integer('questions_count')->default('0');
             $table->integer('min_players_count');
@@ -31,6 +33,7 @@ class CreateQuestsTable extends Migration
             $table->double('address_latitude')->nullable();
             $table->double('address_longitude')->nullable();
             $table->string('rating')->nullable();
+            $table->boolean('status')->default(false);
             $table->timestamps();
         });
     }
