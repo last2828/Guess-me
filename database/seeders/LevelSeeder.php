@@ -2,10 +2,10 @@
 
 namespace Database\Seeders;
 
-use App\Models\QuestLevel;
+use App\Models\Level;
 use Illuminate\Database\Seeder;
 
-class QuestLevelSeeder extends Seeder
+class LevelSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -14,17 +14,17 @@ class QuestLevelSeeder extends Seeder
      */
     public function run()
     {
-      QuestLevel::truncate();
+      Level::truncate();
 
-      QuestLevel::create([
+      Level::create([
         'title' => 'Easy'
       ]);
 
-      QuestLevel::create([
+      Level::create([
         'title' => 'Medium'
       ]);
 
-      QuestLevel::create([
+      Level::create([
         'title' => 'High'
       ]);
     }

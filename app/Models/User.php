@@ -66,6 +66,6 @@ class User extends Authenticatable
 
   public function quests()
   {
-    return $this->belongsTo(Quest::class);
+    return $this->hasMany(Quest::class);
     }
 }

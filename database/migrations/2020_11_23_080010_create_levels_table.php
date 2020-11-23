@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateQuestLevelsTable extends Migration
+class CreateLevelsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,10 @@ class CreateQuestLevelsTable extends Migration
      */
     public function up()
     {
-        Schema::create('quest_levels', function (Blueprint $table) {
-            $table->id();
-            $table->string('title')->unique();
-            $table->timestamps();
+        Schema::create('levels', function (Blueprint $table) {
+          $table->id();
+          $table->string('title')->unique();
+          $table->timestamps();
         });
     }
 
@@ -27,6 +27,6 @@ class CreateQuestLevelsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('quest_levels');
+        Schema::dropIfExists('levels');
     }
 }

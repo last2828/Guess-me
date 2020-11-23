@@ -22,8 +22,8 @@
                     <i class="notika-icon notika-form"></i>
                   </div>
                   <div class="breadcomb-ctn">
-                    <h2>Create you new quest</h2>
-                    <p>Welcome to Notika <span class="bread-ntd">Admin Template</span></p>
+                    <h2>Новый квест</h2>
+                    <p>Создайте интересное и увлекательное приключение</p>
                   </div>
                 </div>
               </div>

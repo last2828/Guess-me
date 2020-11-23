@@ -17,6 +17,6 @@ class DatabaseSeeder extends Seeder
       $this->call(UserSeeder::class);
       $this->call(QuestSeeder::class);
       $this->call(CategorySeeder::class);
-      $this->call(QuestLevelSeeder::class);
+      $this->call(LevelSeeder::class);
     }
 }

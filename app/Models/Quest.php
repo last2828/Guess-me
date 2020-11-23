@@ -26,7 +26,7 @@ class Quest extends Model
     'questions_count',
     'min_players_count',
     'max_players_count',
-    'difficulty_level_id',
+    'level_id',
     'user_id',
     'slug',
   ];
@@ -52,7 +52,7 @@ class Quest extends Model
 
   public function user()
   {
-    return $this->hasOne(User::class);
+    return $this->belongsTo(User::class, 'user_id', 'id');
   }
 
   public function category()
@@ -62,6 +62,6 @@ class Quest extends Model
 
   public function level()
   {
-    return $this->belongsTo(QuestLevel::class, 'difficulty_level_id', 'id');
+    return $this->belongsTo(Level::class, 'level_id', 'id');
   }
 }
