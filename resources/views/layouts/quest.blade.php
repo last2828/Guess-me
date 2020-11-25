@@ -19,20 +19,12 @@
   <!-- font awesome CSS
   ============================================ -->
   <link rel="stylesheet" href="{{asset('css/font-awesome.min.css')}}">
-  <!-- owl.carousel CSS
-  ============================================ -->
-  <link rel="stylesheet" href="{{asset('css/owl.carousel.css')}}">
-  <link rel="stylesheet" href="{{asset('css/owl.theme.css')}}">
-  <link rel="stylesheet" href="{{asset('css/owl.transitions.css')}}">
   <!-- meanmenu CSS
   ============================================ -->
   <link rel="stylesheet" href="{{asset('css/meanmenu/meanmenu.min.css')}}">
-  <!-- animate CSS
-  ============================================ -->
-  <link rel="stylesheet" href="{{asset('css/animate.css')}}">
   <!-- normalize CSS
   ============================================ -->
-  <link rel="stylesheet" href="{{asset('css/normalize.css')}}">
+  {{--<link rel="stylesheet" href="{{asset('css/normalize.css')}}">--}}
   <!-- mCustomScrollbar CSS
   ============================================ -->
   <link rel="stylesheet" href="{{asset('css/scrollbar/jquery.mCustomScrollbar.min.css')}}">
@@ -45,6 +37,7 @@
   <!-- wave CSS
   ============================================ -->
   <link rel="stylesheet" href="{{asset('css/wave/waves.min.css')}}">
+
   <!-- main CSS
   ============================================ -->
   <link rel="stylesheet" href="{{asset('css/main.css')}}">
@@ -62,8 +55,8 @@
 </head>
 <body>
 <!--[if lt IE 8]>
-           <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-       <![endif]-->
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
 
 <!-- Start Header Top Area -->
 <div class="header-top-area">
@@ -120,30 +113,48 @@
         <ul class="nav nav-tabs notika-menu-wrap menu-it-icon-pro">
           {{--<li><a href="{{route('dashboard')}}"><i class="notika-icon notika-house"></i> Home</a>--}}
           {{--</li>--}}
-          <li><a data-toggle="tab" href="#Quests"><i class="notika-icon notika-app"></i> Квесты</a>
+          <li><a href="{{route('quests.index')}}"><i class="notika-icon notika-app"></i> Квесты</a>
           </li>
-          <li><a href="#"><i class="notika-icon notika-mail"></i> Статистика</a>
+          <li><a href="{{route('profile.show')}}"><i class="notika-icon notika-support"></i> Профиль</a>
           </li>
-          <li><a data-toggle="tab" href="{{route('profile.show')}}"><i class="notika-icon notika-support"></i> Профиль</a>
-          </li>
-          <li><a data-toggle="tab" href="#"><i class="notika-icon notika-mail"></i> Помощь</a>
+          <li><a href="#"><i class="notika-icon notika-mail"></i> Помощь</a>
           </li>
         </ul>
-        <div class="tab-content custom-menu-content">
-          <div id="Quests" class="tab-pane in notika-tab-menu-bg animated flipInX">
-            <ul class="notika-main-menu-dropdown">
-              <li><a href="{{route('quests.index')}}">Мои квесты</a>
-              </li>
-              <li><a href="{{route('quests.create')}}">Новый квест</a>
-              </li>
-            </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Main Menu area End-->
+<!-- Breadcomb area Start-->
+<div class="breadcomb-area">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="breadcomb-list">
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+              <div class="breadcomb-wp">
+                <div class="breadcomb-icon">
+                  <i class="notika-icon notika-windows"></i>
+                </div>
+                <div class="breadcomb-ctn">
+                  <h2>Normal Table</h2>
+                  <p>Welcome to Notika <span class="bread-ntd">Admin Template</span></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-3">
+              <div class="breadcomb-report">
+                <button data-toggle="tooltip" data-placement="left" title="Download Report" class="btn"><i class="notika-icon notika-sent"></i></button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
 </div>
-<!-- Main Menu area End-->
+<!-- Breadcomb area End-->
 
 @yield('content')
 
@@ -169,60 +180,55 @@
 <script src="{{asset('js/bootstrap.min.js')}}"></script>
 <!-- wow JS
 ============================================ -->
-<script src="{{asset('js/wow.min.js')}}"></script>
+{{--<script src="{{asset('js/wow.min.js')}}"></script>--}}
 <!-- price-slider JS
 ============================================ -->
-<script src="{{asset('js/jquery-price-slider.js')}}"></script>
+{{--<script src="{{asset('js/jquery-price-slider.js')}}"></script>--}}
 <!-- owl.carousel JS
 ============================================ -->
-<script src="{{asset('js/owl.carousel.min.js')}}"></script>
+{{--<script src="{{asset('js/owl.carousel.min.js')}}"></script>--}}
 <!-- scrollUp JS
 ============================================ -->
-<script src="{{asset('js/jquery.scrollUp.min.js')}}"></script>
+{{--<script src="{{asset('js/jquery.scrollUp.min.js')}}"></script>--}}
 <!-- meanmenu JS
 ============================================ -->
-<script src="{{asset('js/meanmenu/jquery.meanmenu.js')}}"></script>
+{{--<script src="{{asset('js/meanmenu/jquery.meanmenu.js')}}"></script>--}}
 <!-- counterup JS
 ============================================ -->
-<script src="{{asset('js/counterup/jquery.counterup.min.js')}}"></script>
-<script src="{{asset('js/counterup/waypoints.min.js')}}"></script>
-<script src="{{asset('js/counterup/counterup-active.js')}}"></script>
+{{--<script src="{{asset('js/counterup/jquery.counterup.min.js')}}"></script>--}}
+{{--<script src="{{asset('js/counterup/waypoints.min.js')}}"></script>--}}
+{{--<script src="{{asset('js/counterup/counterup-active.js')}}"></script>--}}
 <!-- mCustomScrollbar JS
 ============================================ -->
-<script src="{{asset('js/scrollbar/jquery.mCustomScrollbar.concat.min.js')}}"></script>
-<!-- jvectormap JS
-============================================ -->
-<script src="{{asset('js/jvectormap/jquery-jvectormap-2.0.2.min.js')}}"></script>
-<script src="{{asset('js/jvectormap/jquery-jvectormap-world-mill-en.js')}}"></script>
-<script src="{{asset('js/jvectormap/jvectormap-active.js')}}"></script>
+{{--<script src="{{asset('js/scrollbar/jquery.mCustomScrollbar.concat.min.js')}}"></script>--}}
 <!-- sparkline JS
 ============================================ -->
-<script src="{{asset('js/sparkline/jquery.sparkline.min.js')}}"></script>
-<script src="{{asset('js/sparkline/sparkline-active.js')}}"></script>
+{{--<script src="{{asset('js/sparkline/jquery.sparkline.min.js')}}"></script>--}}
+{{--<script src="{{asset('js/sparkline/sparkline-active.js')}}"></script>--}}
 <!-- sparkline JS
 ============================================ -->
-<script src="{{asset('js/flot/jquery.flot.js')}}"></script>
-<script src="{{asset('js/flot/jquery.flot.resize.js')}}"></script>
-<script src="{{asset('js/flot/curvedLines.js')}}"></script>
-<script src="{{asset('js/flot/flot-active.js')}}"></script>
+{{--<script src="{{asset('js/flot/jquery.flot.js')}}"></script>--}}
+{{--<script src="{{asset('js/flot/jquery.flot.resize.js')}}"></script>--}}
+{{--<script src="{{asset('js/flot/curvedLines.js')}}"></script>--}}
+{{--<script src="{{asset('js/flot/flot-active.js')}}"></script>--}}
 <!-- knob JS
 ============================================ -->
-<script src="{{asset('js/knob/jquery.knob.js')}}"></script>
-<script src="{{asset('js/knob/jquery.appear.js')}}"></script>
-<script src="{{asset('js/knob/knob-active.js')}}"></script>
+{{--<script src="{{asset('js/knob/jquery.knob.js')}}"></script>--}}
+{{--<script src="{{asset('js/knob/jquery.appear.js')}}"></script>--}}
+{{--<script src="{{asset('js/knob/knob-active.js')}}"></script>--}}
 <!--  wave JS
 ============================================ -->
-<script src="{{asset('js/wave/waves.min.js')}}"></script>
-<script src="{{asset('js/wave/wave-active.js')}}"></script>
+{{--<script src="{{asset('js/wave/waves.min.js')}}"></script>--}}
+{{--<script src="{{asset('js/wave/wave-active.js')}}"></script>--}}
 <!--  todo JS
 ============================================ -->
-<script src="{{asset('js/todo/jquery.todo.js')}}"></script>
+{{--<script src="{{asset('js/todo/jquery.todo.js')}}"></script>--}}
 <!-- plugins JS
 ============================================ -->
-<script src="{{asset('js/plugins.js')}}"></script>
+{{--<script src="{{asset('js/plugins.js')}}"></script>--}}
 <!-- main JS
 ============================================ -->
-<script src="{{asset('js/main.js')}}"></script>
+{{--<script src="{{asset('js/main.js')}}"></script>--}}
 @yield('scripts')
 
 

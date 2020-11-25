@@ -27,6 +27,9 @@ class QuestSeeder extends Seeder
           'user_id' => '1',
           'slug' => 'my-first-quest',
           'category_id' => '1',
+          'address' => 'Гайсин, Винницкая область, Украина',
+          'address_latitude' => '48.8139473',
+          'address_longitude' => '29.3812035',
         ]);
 
         Quest::create([
@@ -37,9 +40,12 @@ class QuestSeeder extends Seeder
           'min_players_count' => '3',
           'max_players_count' => '6',
           'level_id' => '2',
-          'user_id' => '2',
+          'user_id' => '1',
           'slug' => 'testing-quest',
           'category_id' => '2',
+          'address' => 'Гайсин, Винницкая область, Украина',
+          'address_latitude' => '48.8139473',
+          'address_longitude' => '29.3812035',
         ]);
 
         Quest::create([
@@ -50,9 +56,12 @@ class QuestSeeder extends Seeder
           'min_players_count' => '2',
           'max_players_count' => '4',
           'level_id' => '3',
-          'user_id' => '3',
+          'user_id' => '1',
           'slug' => 'apartment-quest',
           'category_id' => '3',
+          'address' => 'Гайсин, Винницкая область, Украина',
+          'address_latitude' => '48.8139473',
+          'address_longitude' => '29.3812035',
         ]);
     }
 }

@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Quest;
+use App\Models\Task;
 use Illuminate\Http\Request;
 
 class TaskController extends Controller
@@ -11,9 +13,11 @@ class TaskController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index($slug)
     {
-        //
+      $quest = Quest::with('tasks')->where('slug', $slug)->first();
+
+      return view('author.tasks.index', compact('quest'));
     }
 
     /**
@@ -23,7 +27,7 @@ class TaskController extends Controller
      */
     public function create()
     {
-        //
+      return view('author.tasks.create');
     }
 
     /**

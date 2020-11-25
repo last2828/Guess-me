@@ -20,6 +20,7 @@ class CreateTasksTable extends Migration
             $table->string('image')->nullable();
             $table->string('file')->nullable();
             $table->integer('quest_id');
+            $table->integer('type_id');
             $table->string('answer');
             $table->string('points');
             $table->string('help_1')->nullable();

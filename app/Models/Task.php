@@ -2,12 +2,14 @@
 
 namespace App\Models;
 
+use Cviebrock\EloquentSluggable\Sluggable;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 class Task extends Model
 {
     use HasFactory;
+    use Sluggable;
 
   protected $fillable = [
     'title',
@@ -25,8 +27,27 @@ class Task extends Model
     'quest_id'
   ];
 
-  public function quests()
+  /**
+   * Return the sluggable configuration array for this model.
+   *
+   * @return array
+   */
+  public function sluggable()
+  {
+    return [
+      'slug' => [
+        'source' => 'title'
+      ]
+    ];
+  }
+
+  public function quest()
   {
     return $this->belongsTo(Quest::class, 'quest_id', 'id');
+  }
+
+  public function type()
+  {
+    return $this->belongsTo(TypeTask::class, 'type_id', 'id');
   }
 }

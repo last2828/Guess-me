@@ -26,13 +26,19 @@ Route::get('/', function () {
 
 Route::group(['prefix' => 'author', 'middleware' => 'auth'], function(){
 
-  Route::get('/dashboard', [ MainController::class, 'index' ])->name('dashboard');
+  Route::get('/dashboard', [MainController::class, 'index'])->name('dashboard');
+
+  // Routes for quests
+  Route::resource('quests', QuestController::class)->except(['show', 'edit']);
+  Route::get('/quests/{quest}', [QuestController::class, 'show'])->name('quests.show');
+  Route::get('/quests/{quest}/edit', [QuestController::class, 'edit'])->name('quests.edit');
 
 
-  Route::resources([
-    'quests' => QuestController::class,
-    'tasks' => TaskController::class,
-  ]);
+  // Routes for quest tasks
+  Route::resource('tasks', TaskController::class)->except(['index', 'show', 'edit']);
+  Route::get('/quests/{quest}/tasks', [TaskController::class, 'index'])->name('tasks.index');
+  Route::get('/quests/{quest}/{task}', [TaskController::class, 'show'])->name('tasks.show');
+  Route::get('/quests/{quest}/{task}/edit', [TaskController::class, 'edit'])->name('tasks.edit');
 });
 
 

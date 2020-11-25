@@ -47,7 +47,7 @@ class QuestController extends Controller
       $data = $request->all();
       $data['user_id'] = Auth::id();
 
-      if($data['logo_image'] != null)
+      if(isset($data['logo_image']))
       {
         $logoImage = Storage::disk('local')->put('/public/quests-logotypes', $request->logo_image);
 
@@ -59,9 +59,10 @@ class QuestController extends Controller
         $data['logo_image_original_name'] = $originalName;
       }
 
-      Quest::create($data);
+      $quest = Quest::create($data);
+      $questSlug = $quest->slug;
 
-      return redirect()->route('quests.index');
+      return redirect()->route('quests.edit', $questSlug);
     }
 
     /**
@@ -81,9 +82,9 @@ class QuestController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit($slug)
     {
-        $quest = Quest::find($id);
+        $quest = Quest::where('slug', $slug)->first();
         $categories = Category::all();
         $levels = Level::all();
 
@@ -99,7 +100,7 @@ class QuestController extends Controller
      */
     public function update(Request $request, $id)
     {
-      $data = $request->except(['_token', '_method']);
+      $data = $request->except(['_token', '_method', 'logo_image']);
       $quest = Quest::find($id);
 
       if($request->only('logo_image') != null)
@@ -128,6 +129,7 @@ class QuestController extends Controller
      */
     public function destroy($id)
     {
-        //
+        Quest::destroy($id);
+        return redirect()->route('quests.index');
     }
 }

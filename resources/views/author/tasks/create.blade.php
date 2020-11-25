@@ -1,3 +1,5 @@
+@extends('layouts.quest')
+@section('content')
 <div class="row">
   <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
     <div class="form-example-wrap">
@@ -75,11 +77,9 @@
         <div id="address-map-container" style="width:100%;height:300px; ">
           <div style="width: 100%; height: 100%" id="address-map"></div>
         </div>
-        <div class="form-example-int mg-t-15">
-          <button class="btn btn-success notika-btn-success">Сохранить</button>
-          <a class="btn btn-danger notika-btn-danger" href="{{route('quests.index')}}">Отменить</a>
-        </div>
       </div>
     </div>
   </div>
 </div>
+
+@endsection

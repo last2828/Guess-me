@@ -1,39 +1,19 @@
-@extends('author.layout')
+@extends('layouts.quest')
 @section("stylesheets")
   <!-- Range Slider CSS
 		============================================ -->
   <link rel="stylesheet" href="{{asset('css/bootstrap-select/bootstrap-select.css')}}">
 
-  <!-- cropper CSS
-		============================================ -->
-  <link rel="stylesheet" href="{{asset('css/cropper/cropper.min.css')}}">
+
+  <link rel="stylesheet" href="{{asset('css/wave/button.css')}}">
+
 
 @endsection
 
 @section('content')
-  <div class="breadcomb-area">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-          <div class="breadcomb-list">
-            <div class="row">
-              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                <div class="breadcomb-wp">
-                  <div class="breadcomb-icon">
-                    <i class="notika-icon notika-form"></i>
-                  </div>
-                  <div class="breadcomb-ctn">
-                    <h2>Изменить квест "{{$quest->title}}"</h2>
-                    <p>Создайте интересное и увлекательное приключение</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+
+  @include('author.components.quest-menu')
+
   <div class="form-element-area">
     <form action="{{route('quests.update', $quest->id)}}" method="POST" enctype="multipart/form-data">
       @method('PUT')
@@ -135,6 +115,22 @@
                     </div>
                   </div>
                 </div>
+                <div class="form-example-int mg-t-30">
+                  <div class="form-group">
+                    <div class="basic-tb-hd">
+                      <h4>URL</h4>
+                    </div>
+                    <div class="row">
+                      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="form-group">
+                          <div class="nk-int-st">
+                            <input type="text" class="form-control input-lg" placeholder="введите url" name="slug" value="{{$quest->slug}}">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
                 <!-- Image Cropper area Start-->
                 <div class="form-example-int mg-t-30">
                   <div class="form-group">
@@ -179,7 +175,8 @@
                     <div style="width: 100%; height: 100%" id="address-map"></div>
                   </div>
                   <div class="form-example-int mg-t-15">
-                    <button class="btn btn-success notika-btn-success">Сохранить</button>
+                    <button type="submit" class="btn btn-success notika-btn-success">Сохранить</button>
+                    <a class="btn btn-danger notika-btn-danger" href="{{route('quests.index')}}">Отменить</a>
                   </div>
                 </div>
               </div>

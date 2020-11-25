@@ -22,12 +22,12 @@ class CreateQuestsTable extends Migration
             $table->string('logo_image_original_name')->nullable();
             $table->string('lead_time')->nullable();
             $table->integer('questions_count')->default('0');
-            $table->integer('min_players_count');
-            $table->integer('max_players_count');
-            $table->string('level_id');
+            $table->integer('min_players_count')->nullable();
+            $table->integer('max_players_count')->nullable();
+            $table->string('level_id')->nullable();
             $table->integer('user_id');
-            $table->string('slug')->unique();
-            $table->integer('category_id');
+            $table->string('slug')->unique()->nullable();
+            $table->integer('category_id')->nullable();
             $table->integer('attempts')->default('0');
             $table->string('address')->nullable();
             $table->double('address_latitude')->nullable();
