@@ -42,8 +42,9 @@ class TaskController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request, $quest)
+    public function store(Request $request)
     {
+      dd($request->all());
       $quest = Quest::with('user')->find($quest);
 
       if(Auth::id() == $quest->user->id)

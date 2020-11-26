@@ -56,4 +56,29 @@
 @section('content')
 
 <center><div id="map" style="height:500px;width:900px;margin-top:5%;"></div></center>
+<form action="{{route('tasks.store')}}" method="POST">
+  @csrf
+  <div class="form-group">
+    <div class="basic-tb-hd">
+      <h4>Мое местонахождение</h4>
+    </div>
+    <input type="hidden" name="address_latitude" id="address-latitude" value="0" />
+    <input type="hidden" name="address_longitude" id="address-longitude" value="0" />
+  </div>
+  <button type="submit">Отправить</button>
+</form>
+
+@endsection
+
+@section('scripts')
+
+  <script>
+
+    function setLocationCoordinates(key, lat, lng) {
+      const latitudeField = document.getElementById(key + "-" + "latitude");
+      const longitudeField = document.getElementById(key + "-" + "longitude");
+      latitudeField.value = lat;
+      longitudeField.value = lng;
+    }
+  </script>
 @endsection
