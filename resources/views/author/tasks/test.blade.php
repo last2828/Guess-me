@@ -72,13 +72,5 @@
 
 @section('scripts')
 
-  <script>
-
-    function setLocationCoordinates(key, lat, lng) {
-      const latitudeField = document.getElementById(key + "-" + "latitude");
-      const longitudeField = document.getElementById(key + "-" + "longitude");
-      latitudeField.value = lat;
-      longitudeField.value = lng;
-    }
-  </script>
+  <script src="{{asset('js/mapInput.js')}}"></script>
 @endsection
