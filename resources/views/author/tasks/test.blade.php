@@ -56,7 +56,7 @@
 @section('content')
 
 <center><div id="map" style="height:500px;width:900px;margin-top:5%;"></div></center>
-<form action="{{route('tasks.store')}}" method="POST">
+<form action="{{route('tasks.store', 1)}}" method="POST">
   @csrf
   <div class="form-group">
     <div class="basic-tb-hd">
