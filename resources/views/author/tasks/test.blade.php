@@ -1,7 +1,6 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Simple Map</title>
+@extends('layouts.quest')
+
+@section('stylesheets')
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDtvqa_LFxKAZ9_8w-EkXNQVSg5IbBET6M&callback=initMap" defer></script>
 
   <script>
@@ -53,9 +52,8 @@
     }
 
   </script>
-</head>
-<body>
-<center><div id="map" style="height:500px;width:900px;margin-top:5%;"></div></center>
-</body>
-</html>
+@endsection
+@section('content')
 
+<center><div id="map" style="height:500px;width:900px;margin-top:5%;"></div></center>
+@endsection
