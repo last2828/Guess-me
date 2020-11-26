@@ -46,6 +46,11 @@ Route::group(['prefix' => 'author', 'middleware' => 'auth'], function(){
 //    Route::get('{task}/edit', [TaskController::class, 'edit'])->name('tasks.edit');
   });
 
+
+
 });
 
+Route::get('/test', function(){
+  return view('author.tasks.test');
+});
 
