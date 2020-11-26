@@ -4,9 +4,7 @@
 		============================================ -->
   <link rel="stylesheet" href="{{asset('css/bootstrap-select/bootstrap-select.css')}}">
 
-
   <link rel="stylesheet" href="{{asset('css/wave/button.css')}}">
-
 
 @endsection
 

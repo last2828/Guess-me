@@ -4,7 +4,10 @@ namespace App\Http\Controllers;
 
 use App\Models\Quest;
 use App\Models\Task;
+use App\Models\TypeAnswer;
+use App\Models\TypeTask;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class TaskController extends Controller
 {
@@ -25,9 +28,12 @@ class TaskController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create($slug)
     {
-      return view('author.tasks.create');
+      $quest = Quest::where('slug', $slug)->first();
+      $typeTask = request('type');
+
+      return view('author.tasks.create', compact(['quest', 'typeTask']));
     }
 
     /**
@@ -36,9 +42,29 @@ class TaskController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(Request $request, $quest)
     {
-        //
+      $quest = Quest::with('user')->find($quest);
+
+      if(Auth::id() == $quest->user->id)
+      {
+        dd('welcome');
+      }else{
+        dd('нельзя');
+      }
+
+
+      if($user->ownerOf($quest))
+      {
+        dd('hello owner');
+      }
+
+      $data = $request->all();
+      $data['quest_id'] = $quest;
+
+      Task::create($data);
+
+      return redirect()->route('tasks.index');
     }
 
     /**
@@ -47,7 +73,7 @@ class TaskController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show($slug)
     {
         //
     }
@@ -58,9 +84,11 @@ class TaskController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit($slug)
     {
-        //
+      $quest = Quest::with('tasks')->where('slug', $slug)->first();
+
+      return view('author.tasks.edit', compact('quest'));
     }
 
     /**

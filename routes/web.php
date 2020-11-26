@@ -35,10 +35,17 @@ Route::group(['prefix' => 'author', 'middleware' => 'auth'], function(){
 
 
   // Routes for quest tasks
-  Route::resource('tasks', TaskController::class)->except(['index', 'show', 'edit']);
-  Route::get('/quests/{quest}/tasks', [TaskController::class, 'index'])->name('tasks.index');
-  Route::get('/quests/{quest}/{task}', [TaskController::class, 'show'])->name('tasks.show');
-  Route::get('/quests/{quest}/{task}/edit', [TaskController::class, 'edit'])->name('tasks.edit');
+
+
+  Route::group(['prefix' => 'quests/{quest}', 'middleware' => 'auth'], function(){
+    Route::resource('tasks', TaskController::class);
+
+//    Route::get('tasks', [TaskController::class, 'index'])->name('tasks.index');
+//    Route::get('tasks/create', [TaskController::class, 'create'])->name('tasks.create');
+//    Route::get('{task}', [TaskController::class, 'show'])->name('tasks.show');
+//    Route::get('{task}/edit', [TaskController::class, 'edit'])->name('tasks.edit');
+  });
+
 });
 
 

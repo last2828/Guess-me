@@ -24,7 +24,7 @@
   <link rel="stylesheet" href="{{asset('css/meanmenu/meanmenu.min.css')}}">
   <!-- normalize CSS
   ============================================ -->
-  {{--<link rel="stylesheet" href="{{asset('css/normalize.css')}}">--}}
+  <link rel="stylesheet" href="{{asset('css/normalize.css')}}">
   <!-- mCustomScrollbar CSS
   ============================================ -->
   <link rel="stylesheet" href="{{asset('css/scrollbar/jquery.mCustomScrollbar.min.css')}}">
@@ -186,49 +186,49 @@
 {{--<script src="{{asset('js/jquery-price-slider.js')}}"></script>--}}
 <!-- owl.carousel JS
 ============================================ -->
-{{--<script src="{{asset('js/owl.carousel.min.js')}}"></script>--}}
+<script src="{{asset('js/owl.carousel.min.js')}}"></script>
 <!-- scrollUp JS
 ============================================ -->
-{{--<script src="{{asset('js/jquery.scrollUp.min.js')}}"></script>--}}
+<script src="{{asset('js/jquery.scrollUp.min.js')}}"></script>
 <!-- meanmenu JS
 ============================================ -->
-{{--<script src="{{asset('js/meanmenu/jquery.meanmenu.js')}}"></script>--}}
+<script src="{{asset('js/meanmenu/jquery.meanmenu.js')}}"></script>
 <!-- counterup JS
 ============================================ -->
-{{--<script src="{{asset('js/counterup/jquery.counterup.min.js')}}"></script>--}}
-{{--<script src="{{asset('js/counterup/waypoints.min.js')}}"></script>--}}
-{{--<script src="{{asset('js/counterup/counterup-active.js')}}"></script>--}}
+<script src="{{asset('js/counterup/jquery.counterup.min.js')}}"></script>
+<script src="{{asset('js/counterup/waypoints.min.js')}}"></script>
+<script src="{{asset('js/counterup/counterup-active.js')}}"></script>
 <!-- mCustomScrollbar JS
 ============================================ -->
-{{--<script src="{{asset('js/scrollbar/jquery.mCustomScrollbar.concat.min.js')}}"></script>--}}
+<script src="{{asset('js/scrollbar/jquery.mCustomScrollbar.concat.min.js')}}"></script>
 <!-- sparkline JS
 ============================================ -->
-{{--<script src="{{asset('js/sparkline/jquery.sparkline.min.js')}}"></script>--}}
-{{--<script src="{{asset('js/sparkline/sparkline-active.js')}}"></script>--}}
+<script src="{{asset('js/sparkline/jquery.sparkline.min.js')}}"></script>
+<script src="{{asset('js/sparkline/sparkline-active.js')}}"></script>
 <!-- sparkline JS
 ============================================ -->
-{{--<script src="{{asset('js/flot/jquery.flot.js')}}"></script>--}}
-{{--<script src="{{asset('js/flot/jquery.flot.resize.js')}}"></script>--}}
-{{--<script src="{{asset('js/flot/curvedLines.js')}}"></script>--}}
-{{--<script src="{{asset('js/flot/flot-active.js')}}"></script>--}}
+<script src="{{asset('js/flot/jquery.flot.js')}}"></script>
+<script src="{{asset('js/flot/jquery.flot.resize.js')}}"></script>
+<script src="{{asset('js/flot/curvedLines.js')}}"></script>
+<script src="{{asset('js/flot/flot-active.js')}}"></script>
 <!-- knob JS
 ============================================ -->
-{{--<script src="{{asset('js/knob/jquery.knob.js')}}"></script>--}}
-{{--<script src="{{asset('js/knob/jquery.appear.js')}}"></script>--}}
-{{--<script src="{{asset('js/knob/knob-active.js')}}"></script>--}}
+<script src="{{asset('js/knob/jquery.knob.js')}}"></script>
+<script src="{{asset('js/knob/jquery.appear.js')}}"></script>
+<script src="{{asset('js/knob/knob-active.js')}}"></script>
 <!--  wave JS
 ============================================ -->
-{{--<script src="{{asset('js/wave/waves.min.js')}}"></script>--}}
-{{--<script src="{{asset('js/wave/wave-active.js')}}"></script>--}}
+<script src="{{asset('js/wave/waves.min.js')}}"></script>
+<script src="{{asset('js/wave/wave-active.js')}}"></script>
 <!--  todo JS
 ============================================ -->
-{{--<script src="{{asset('js/todo/jquery.todo.js')}}"></script>--}}
+<script src="{{asset('js/todo/jquery.todo.js')}}"></script>
 <!-- plugins JS
 ============================================ -->
-{{--<script src="{{asset('js/plugins.js')}}"></script>--}}
+<script src="{{asset('js/plugins.js')}}"></script>
 <!-- main JS
 ============================================ -->
-{{--<script src="{{asset('js/main.js')}}"></script>--}}
+<script src="{{asset('js/main.js')}}"></script>
 @yield('scripts')
 
 

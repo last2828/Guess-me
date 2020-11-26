@@ -20,19 +20,16 @@ class TaskSeeder extends Seeder
         'title' => 'Первое задание в квесте',
         'description' => 'Назовите имя организатора квеста',
         'quest_id' => '1',
-        'type_id' => '1',
         'slug' => 'first-quest-task',
         'answer' => 'Кирилл',
         'points' => 10,
         'help_1' => '2 буквы "л"',
-        'delimeter_1' => 2,
       ]);
 
       Task::create([
         'title' => 'Второе задание в квесте',
         'description' => 'Сфотографируйте небо',
         'quest_id' => '1',
-        'type_id' => '2',
         'slug' => 'sfotografiruite-nebo',
         'answer' => 'IMAGE OBJECT',
         'points' => 20,
@@ -42,12 +39,10 @@ class TaskSeeder extends Seeder
         'title' => 'Идите к этому месту',
         'description' => 'Соборная 46 кв 39',
         'quest_id' => '1',
-        'type_id' => '3',
         'slug' => 'sobornaya-46',
         'answer' => 'MAP OBJECT',
         'points' => 50,
         'help_1' => 'Дом Кирилла Бузюка',
-        'delimeter_1' => 2,
       ]);
     }
 }

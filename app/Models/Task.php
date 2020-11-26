@@ -17,6 +17,8 @@ class Task extends Model
     'image',
     'slug',
     'answer',
+    'typeTask',
+    'typeAnswer_id',
     'help_1',
     'delimeter_1',
     'help_2',
@@ -44,10 +46,5 @@ class Task extends Model
   public function quest()
   {
     return $this->belongsTo(Quest::class, 'quest_id', 'id');
-  }
-
-  public function type()
-  {
-    return $this->belongsTo(TypeTask::class, 'type_id', 'id');
   }
 }
