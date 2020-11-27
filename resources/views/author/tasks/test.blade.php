@@ -26,14 +26,7 @@
                 lng: position.coords.longitude,
               };
 
-              function setLocationCoordinates(lat, lng) {
-                const latitudeField = document.getElementById("address-latitude");
-                const longitudeField = document.getElementById("address-longitude");
-
-                latitudeField.value = lat;
-                longitudeField.value = lng;
-              }
-
+              setLocationCoordinates(position.coords.latitude, position.coords.longitude);
               infoWindow.setPosition(pos);
               infoWindow.setContent("Location found.");
               infoWindow.open(map);
@@ -58,6 +51,14 @@
           : "Error: Your browser doesn't support geolocation."
       );
       infoWindow.open(map);
+    }
+
+    function setLocationCoordinates(lat, lng) {
+      const latitudeField = document.getElementById("address-latitude");
+      const longitudeField = document.getElementById("address-longitude");
+
+      latitudeField.value = lat;
+      longitudeField.value = lng;
     }
 
   </script>
