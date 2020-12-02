@@ -6,7 +6,6 @@
       </div>
       <div class="nk-int-st">
         <input type="text" class="form-control input-sm" placeholder="вопрос*" name="description" required>
-        <input type="hidden" name="typeTask" value="Вопрос">
       </div>
     </div>
   </div>

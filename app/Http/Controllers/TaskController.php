@@ -6,8 +6,10 @@ use App\Models\Quest;
 use App\Models\Task;
 use App\Models\TypeAnswer;
 use App\Models\TypeTask;
+use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Symfony\Component\Finder\Exception\AccessDeniedException;
 
 class TaskController extends Controller
 {
@@ -42,30 +44,35 @@ class TaskController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request, $quest)
+    public function store(Request $request, $quest_id)
     {
-      dd($request->all());
-      $quest = Quest::with('user')->find($quest);
 
-      if(Auth::id() == $quest->user->id)
-      {
-        dd('welcome');
-      }else{
-        dd('нельзя');
+      try{
+
+        $quest = Quest::with('user')->findOrFail($quest_id);
+
+      }catch(ModelNotFoundException $e){
+
+        return redirect()->back()->withErrors(['error' => $e->getMessage()]);
+
+      }
+      try{
+
+        if(!(Auth::id() == $quest->user->id)){
+          throw new AccessDeniedException();
+        }
+          $data = $request->all();
+          $data['quest_id'] = $quest->id;
+
+          Task::create($data);
+          return redirect()->route('tasks.index', $quest->slug);
+
+
+      }catch(AccessDeniedException $e){
+
+        return redirect()->route('quests.index')->withErrors(['error' => $e->getMessage()]);
       }
 
-
-      if($user->ownerOf($quest))
-      {
-        dd('hello owner');
-      }
-
-      $data = $request->all();
-      $data['quest_id'] = $quest;
-
-      Task::create($data);
-
-      return redirect()->route('tasks.index');
     }
 
     /**

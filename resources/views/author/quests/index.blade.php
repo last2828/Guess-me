@@ -10,6 +10,10 @@
 
 @endsection
 
+@if($errors->any())
+  @dd($errors->all())
+@endif
+
 @section('content')
   <!-- Data Table area Start-->
   <div class="data-table-area">

@@ -13,7 +13,9 @@
   <link rel="stylesheet" href="{{asset('css/summernote/summernote.css')}}">
 
 @endsection
-
+  @if($errors->any())
+    @dd($errors->all())
+  @endif
 @section('content')
   @include('author.components.quest-menu')
 <div class="container">
