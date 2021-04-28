@@ -52,5 +52,7 @@ Route::group(['prefix' => 'author', 'middleware' => 'auth'], function(){
 
 Route::get('/test', function(){
   return view('author.tasks.test');
-});
+})->name('test_form');
+
+Route::post('/test', [TaskController::class, 'checkAnswerDistance'])->name('test');
 
